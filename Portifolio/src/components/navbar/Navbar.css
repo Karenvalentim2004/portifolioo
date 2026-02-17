@@ -1,0 +1,90 @@
+:root{
+    --branco: #FFFFFF;
+    --roxo: rgb(86, 24, 86);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.logo a {
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: var(--branco);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--roxo);
+  transition: 0.3s;
+}
+
+.nav-links button:hover::after,
+.nav-links button.active::after {
+  width: 100%;
+}
+
+.nav-links button:hover,
+.nav-links button.active {
+  color: var(--roxo);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--branco);
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--roxo);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--roxo);
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
