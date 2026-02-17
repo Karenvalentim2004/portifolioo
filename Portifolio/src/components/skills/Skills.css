@@ -1,0 +1,71 @@
+:root {
+    --branco: #FFFFFF;
+    --roxo: rgb(86, 24, 86);
+    --azul-escuro: #0a1929;
+}
+
+.skills {
+    padding: 4rem 2rem;
+    color: var(--branco);
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    font-family: "DM Serif Text", serif;
+    margin-bottom: 1rem;
+    color: var(--branco);
+}
+
+.skills p {
+    margin-bottom: 2rem;
+    color: var(--branco);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.skills-box {
+    background: transparent;
+    backdrop-filter: blur(3px);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid var(--roxo);
+    transition: all 0.3s ease;
+}
+
+
+.skills-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--roxo);
+    box-shadow: 0 0 20px rgba(148, 45, 155, 0.4);
+}
+
+
+.skills-box h3 {
+    margin-bottom: 1rem;
+    color: var(--branco);
+}
+
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-box ul li {
+    margin: 0.6rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+.skills-box ul li i {
+    font-size: 1.3rem;
+}
