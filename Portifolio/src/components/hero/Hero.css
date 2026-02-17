@@ -1,0 +1,111 @@
+:root {
+    --branco: #FFFFFF;
+    --roxo: rgb(86, 24, 86);
+}
+
+.hero {
+    font-family: "DM Serif Text", serif;
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.3;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    line-height: 1.6;
+    color: var(--branco);
+}
+
+/* Digitação */
+.typing {
+    color: var(--roxo);
+    white-space: nowrap;
+}
+
+/* Botões */
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+/* Ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    background: var(--branco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(86, 24, 86);;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: var(--roxo);
+    color: var(--branco);
+    transform: translateY(-3px);
+}
+
+/* Botão Download CV */
+.btn-cv {
+    background: var(--branco);
+    color: var(--roxo);
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-cv:hover {
+    background: var(--roxo);
+    color: var(--branco);
+}
+
+/* Responsivo */
+
+@media (max-width: 575.98px){}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+    
